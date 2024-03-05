@@ -1,11 +1,3 @@
-/* Reset default margin and padding */
-body {
-    margin: 0;
-    padding: 0;
-    height: 2048px;
-}
-
-/* Style the navigation bar */
 .nav-bar {
     position: fixed;
     /* Fixed position */
@@ -74,16 +66,3 @@ body {
 }
 
 /* Style the banner */
-
-
-.banner img {
-    width: 100%;
-    /* Full width */
-    height: 90vh;
-    /* Maintain aspect ratio */
-    object-fit: cover;
-    /* Cover the entire container */
-    background-color: rgba(0, 0, 0, 0.5);
-
-    filter: brightness(75%);
-}
