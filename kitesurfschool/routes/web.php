@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\admincontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +23,7 @@ Route::get('/', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
-route::get('/home',[HomeController::class, 'index'])->middleware('auth')->name('home');
+route::get('/home', [HomeController::class, 'index'])->middleware('auth')->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -30,4 +31,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(function () {
+    Route::get('test', [admincontroller::class, 'index'])->name('test');
+});
+
+// Route::get('admin/test', function () {
+//     // Your logic here
+// })->name('admin.test');
+require __DIR__ . '/auth.php';

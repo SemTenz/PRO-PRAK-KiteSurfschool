@@ -22,7 +22,7 @@
 
         <!-- Page Heading -->
         @if (isset($header))
-        <header class="bg-white shadow">
+        <header class="bg-gray shadow">
 
             <header class="bg-white dark:bg-gray-800 shadow">
 
