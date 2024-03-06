@@ -15,9 +15,14 @@
             </div>
             <div class="nav-bar__menu2">
                 <ul>
+                    @if (Auth::check())
+                    <li><a href="{{ route('home') }}">Boek Nu</a></li>
+                    <li><a href="{{ route('profile.edit') }}">Profiel</a></li>
+                    @else
                     <li><a href="{{ route('home') }}">Boek Nu</a></li>
                     <li><a href="{{ route('profile.edit') }}">Login</a></li>
                     <li><a href="{{ route('profile.destroy') }}">Register's</a></li>
+                    @endif
                 </ul>
             </div>
         </div>
