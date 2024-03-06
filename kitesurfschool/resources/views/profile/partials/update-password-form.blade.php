@@ -35,12 +35,7 @@
             <x-primary-button>{{ __('Save') }}</x-primary-button>
 
             @if (session('status') === 'password-updated')
-                <p
-                    x-data="{ show: true }"
-                    x-show="show"
-                    x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
-                    class="text-sm text-gray-600 dark:text-gray-400"
+            <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)" <<<<<<< HEAD class="text-sm text-gray-600"=======class="text-sm text-gray-600 dark:text-gray-400">>>>>>> c979c13a9f87985dd9ade4c749d707121be79f39
                 >{{ __('Saved.') }}</p>
             @endif
         </div>
