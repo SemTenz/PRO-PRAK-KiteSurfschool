@@ -1,1 +1,3 @@
-<h1>i am test</h1>
+<x-admin-layout>
+    <h1>ik ben test</h1>
+</x-admin-layout>

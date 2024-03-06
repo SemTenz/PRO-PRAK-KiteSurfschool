@@ -19,7 +19,7 @@
 
                 @if (Auth::user()->usertype == 'admin')
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('admin.test')" :active="request()->routeIs('admin.test')">
+                    <x-nav-link :href="route('admin.index')" :active="request()->routeIs('admin.index')">
                         {{ __('Admin Data') }}
                     </x-nav-link>
                 </div>

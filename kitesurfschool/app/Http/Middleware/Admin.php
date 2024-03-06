@@ -16,10 +16,17 @@ class Admin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth()->user()->usertype=='admin') {
-            return $next($request);
+        // if (Auth()->user()->usertype == 'admin') {
+        //     return $next($request);
+        // }
+
+        // abort(401);
+
+        if (!auth()->check() || !auth()->user()->usertype == 'admin') {
+            abort(403);
         }
 
-        abort(401);
+
+        return $next($request);
     }
 }
