@@ -12,16 +12,26 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     @vite('resources/scss/home.scss')
+    @vite('resources/scss/navbar.scss')
 </head>
 
 <body>
     <!-- Include Navigation -->
-    @include('layouts.navigation')
+    @include('parts.navbar')
+    
 
-    <!-- Banner -->
-    <div class="banner">
-        <img src="{{ asset('img/banner_landing.jpg') }}" alt="Banner">
+<div class="banner">
+    <img src="{{ asset('img/banner_landing.jpg') }}" alt="Banner">
+    <div class="banner-overlay"></div> <!-- Overlay to darken the image -->
+    <div class="banner-content">
+        <h1>Welkom bij kitesurfschool Windkracht-12!</h1>
+        <div class="banner-buttons">
+            <button class="btn btn-primary">Boek nu</button>
+            <button class="btn btn-secondary">Over ons</button>
+        </div>
     </div>
+</div>
+
 
 </body>
 
