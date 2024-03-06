@@ -16,14 +16,14 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('home/home');
-});
+    return view('home/home'); 
+})->name('home');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
-route::get('/home', [HomeController::class, 'index'])->middleware('auth')->name('home');
+route::get('/overzicht', [HomeController::class, 'index'])->middleware('auth')->name('overzicht');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
