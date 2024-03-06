@@ -22,7 +22,7 @@
 .nav-bar__container {
     max-width: 1200px;
     margin: 0 auto;
-    max-height: 50px;
+    max-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,14 +55,13 @@
     /* Underline on hover */
 }
 
-/* Style the logo */
 .nav-bar__logo img {
-    max-width: 100px;
+    max-width: 75px;
     max-height: 75px;
     border-radius: 50%;
-    /* Rounded border */
-    border: 1px solid white;
-    /* Border */
+    border: 1px solid black;
+    filter: invert(1);
+
 }
 
-/* Style the banner */
+
