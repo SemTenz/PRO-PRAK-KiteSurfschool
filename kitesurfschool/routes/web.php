@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use Database\Seeders\UserSeeder;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +36,8 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('index', [UserController::class, 'index'])->name('index');
     Route::resource('/users', UserController::class);
+    Route::get(('/users/{id}/edit'), [UserController::class, 'edit']);
+    Route::put('/users/{id}', [UserController::class, 'update']);
 });
 
 // Route::get('admin/test', function () {
