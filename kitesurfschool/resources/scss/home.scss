@@ -1,5 +1,69 @@
-.container{
-    background-color: red;
+.body {
+    height: 2048px;
+}
 
-    
+.banner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* Maintain aspect ratio */
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.banner-buttons {
+    margin-top: 20px;
+}
+
+.banner-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid black; /* Add border */
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background-color: #63CAF2;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
 }
