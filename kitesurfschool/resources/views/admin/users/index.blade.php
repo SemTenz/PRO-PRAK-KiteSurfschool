@@ -1,5 +1,5 @@
 <x-admin-layout>
-    <h1>ik ben users</h1>
+    @livewire('search')
 
     <table>
         <tr>
@@ -14,7 +14,7 @@
             <td>{{ $user->name }}</td>
             <td>{{ $user->email }}</td>
             <td>{{ $user->usertype }}</td>
-            <td><a href="{{route('admin.users.edit',$user->id)}}">Wijzig Gebruikersrol</a></td>
+            <td><a href="{{route('admin.users.edit ',$user->id)}}">Wijzig Gebruikersrol</a></td>
         </tr>
         @endforeach
     </table>

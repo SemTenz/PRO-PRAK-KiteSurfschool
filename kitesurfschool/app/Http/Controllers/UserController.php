@@ -18,6 +18,11 @@ class UserController extends Controller
         $users = User::find($id);
         return view('admin.users.edit', compact('users'));
     }
+    public function editRole($id)
+    {
+        $users = User::find($id);
+        return view('admin.users.editRole', compact('users'));
+    }
 
     public function update(Request $request, $id)
     {
