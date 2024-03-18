@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +36,9 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(fun
     Route::get('index', [UserController::class, 'index'])->name('index');
     Route::resource('/users', UserController::class);
 });
+
+
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.show');
 
 // Route::get('admin/test', function () {
 //     // Your logic here
