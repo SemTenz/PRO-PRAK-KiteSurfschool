@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .white-block {
@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
 
-    .logo { 
+    .logo {
         background-size: cover;
         height: auto;
         width: 30%;
@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: -1%;
-    font-family: 'Dangrek';
+    font-family: "Dangrek";
     font-size: 30px;
 }
 
@@ -66,32 +66,84 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     input {
         outline: 0;
         border-width: 0 0 0px;
-        font-family: 'bz';
-        
+        font-family: "bz";
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.3);
+            font-size: 13px;
+        }
     }
 }
-.email-input {
-    border-bottom: 3px solid black;   
-    justify-content: center;
-    align-items: center;
+
+.email-input,
+.password-input {
     width: 60%;
-    
+    border-bottom: 3px solid black;
+    margin-bottom: 9%;
 }
 
-.email-input::placeholder {
-    text-align: left; 
+.remember-forgot-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: -8%;
 }
 
+.remember-me-label {
+    display: flex;
+}
 
-.remember-me {
-    text-align: left; /* Centreer de Remember Me checkbox */
-    margin-top: 20px; /* Voeg ruimte boven de Remember Me checkbox toe */
+.remember-me-text {
+    font-size: 15px;
 }
 
 .forgot-password-link {
-    margin-top: 20px; /* Voeg ruimte boven de "Wachtwoord vergeten?"-link toe */
+    font-size: 10px;
+    margin-top: 20px; /* Voeg ruimte boven de "Wachtwoord vergeten?"-link toe */ /* Plaats "Wachtwoord vergeten?" rechts */
+    font-family: "bz";
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.forgot-password-link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    border: 1px solid #63caf2;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    position: relative; 
+    margin: 1%;
+  }
+
+  input[type=checkbox]:checked::before {
+    content: '\2713'; 
+    font-size: 14px; 
+    color: #63caf2; 
+    position: absolute; 
+    top: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.remember-me-label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me-checkbox {
+    margin-right: 5px;
+}
+
+.remember-me-text {
+    font-size: 10px; /* Pas de grootte aan zoals gewenst */
+    color: #63caf2; 
+    font-family: "bz";
 }
