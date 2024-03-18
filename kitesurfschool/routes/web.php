@@ -38,7 +38,6 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(fun
     Route::resource('/users', UserController::class);
     Route::get(('/users/{id}/edit'), [UserController::class, 'edit']);
     Route::put('/users/{id}', [UserController::class, 'update']);
-    Route::get(('/users/{id}/edit'), [UserController::class, 'edit']);
 });
 
 // Route::get('admin/test', function () {

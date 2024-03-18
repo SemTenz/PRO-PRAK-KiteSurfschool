@@ -15,8 +15,13 @@
         <br>
 
         <select name="usertype" id="usertype">
+
+            <option selected="selected" value="{{$users->usertype}}">
+                {{$users->usertype}}
+            </option>
+            <option value="user" default>gebruiker</option>
             <option value="instructor">instructeur</option>
-            <option value="user">gebruiker</option>
+
         </select>
         <br>
         <br>

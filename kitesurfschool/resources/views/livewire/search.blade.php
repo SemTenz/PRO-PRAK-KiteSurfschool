@@ -10,7 +10,7 @@
             <div class="d-flex flex-column ml-3">
                 <span>{{$user->name}}</span>
                 <small>{{$user->email}}</small>
-                <a href="{{route('admin.users.editRole',$user->id)}}">Wijzig Gebruikersrol</a>
+                <a href="{{route('admin.users.edit',$user->id)}}">Wijzig Gebruikersrol</a>
             </div>
         </div>
         @endforeach
