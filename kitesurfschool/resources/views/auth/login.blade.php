@@ -39,23 +39,22 @@
 
                    <!-- Remember Me -->
                    <div class="remember-forgot-container">
-                    <div class="remember-me-label">
-                        <label for="remember_me">
-                            <input id="remember_me" type="checkbox" class="remember-me-checkbox" name="remember">
-                            <span class="remember-me-text">{{ __('Onthoud mij') }}</span>
-                        </label>
-                    </div>
-                    @if (Route::has('password.request'))
-                    <div class="forgot-password">
-                        <a class="forgot-password-link" href="{{ route('password.request') }}">
-                            {{ __('Wachtwoord vergeten?') }}
-                        </a>
-                    </div>
-                    @endif
-                </div>
-                   <x-primary-button class="login-button">
+                       <label for="remember_me" class="remember-label">
+                           <input id="remember_me" type="checkbox" class="remember-me-checkbox" name="remember">
+                           <span class="remember-me-text">{{ __('Onthoud mij') }}</span>
+                       </label>
+                       @if (Route::has('password.request'))
+                           <div class="forgot-password">
+                               <a class="forgot-password-link" href="{{ route('password.request') }}">
+                                   {{ __('Wachtwoord vergeten?') }}
+                               </a>
+                           </div>
+                       @endif
+                   </div>
+                   <button class="login-button">
                        {{ __('Inloggen') }}
-                   </x-primary-button>
+                   </button>
+
 
                    <a class="register-link" href="{{ route('register') }}">
                        {{ __('Nog geen account?') }}
