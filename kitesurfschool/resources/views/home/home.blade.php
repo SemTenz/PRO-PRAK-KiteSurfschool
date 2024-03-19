@@ -17,7 +17,10 @@
 
 <body>
     @include('parts.navbar')
+<<<<<<< HEAD
 
+=======
+>>>>>>> 57d3fd0fea61012ca15c715ec5f6a7c44fd2f226
 
     <div class="banner">
         <img src="{{ asset('img/banner_landing.jpg') }}" alt="Banner">
