@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 use Database\Seeders\UserSeeder;
 
 /*
@@ -39,6 +40,9 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(fun
     Route::get(('/users/{id}/edit'), [UserController::class, 'edit']);
     Route::put('/users/{id}', [UserController::class, 'update']);
 });
+
+
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.show');
 
 // Route::get('admin/test', function () {
 //     // Your logic here
