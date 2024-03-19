@@ -25,7 +25,7 @@
         <div class="banner-content">
             <h1>Welkom bij kitesurfschool Windkracht-12!</h1>
             <div class="banner-buttons">
-                <button class="btn btn-primary">Boek nu</button>
+                <button class="btn btn-primary">Inloggen</button>
                 <button class="btn btn-secondary">Over ons</button>
             </div>
         </div>
