@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BanController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -42,7 +43,8 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(fun
     Route::resource('/users', UserController::class);
     Route::get(('/users/{id}/edit'), [UserController::class, 'edit']);
     Route::put('/users/{id}', [UserController::class, 'update']);
-    Route::post('/users/{user}/ban', [UserController::class, 'banUser'])->name('users.ban');
+    Route::post('/users/{user}/ban', [BanController::class, 'banUser'])->name('users.ban');
+    Route::resource('/bannedusers', BanController::class);
 });
 
 
