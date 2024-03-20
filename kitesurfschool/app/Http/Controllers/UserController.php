@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 
+
 class UserController extends Controller
 {
     public function index()
@@ -38,5 +39,15 @@ class UserController extends Controller
         $users->usertype = $request->get('usertype');
         $users->save();
         return redirect('admin/index')->with('success', 'User has been updated');
+    }
+
+    // function for the admin to ban a user 
+    public function banUser(User $user, Request $request)
+    {
+
+        $clientIpAddress = $request->ip(); //get the users ip adress 
+        $users = User::all();
+        $user->ban(); // ban the user
+        return view('admin.users.index', compact('users'))->with('success', 'User has been banned');
     }
 }

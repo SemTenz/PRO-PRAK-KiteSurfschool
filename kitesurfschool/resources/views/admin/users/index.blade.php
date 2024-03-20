@@ -15,6 +15,14 @@
             <td>{{ $user->email }}</td>
             <td>{{ $user->usertype }}</td>
             <td><a href="{{route('admin.users.edit',$user->id)}}">Wijzig Gebruikersrol</a></td>
+
+            <td>
+                <form method="POST" action="{{ route('admin.users.ban', $user) }}">
+                    @csrf
+                    @method('POST')
+                    <button type="submit">Ban User</button>
+                </form>
+            </td>
         </tr>
         @endforeach
     </table>

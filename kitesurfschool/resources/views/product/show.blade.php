@@ -13,13 +13,18 @@
 </head>
 
 <body>
-    <!-- @include('parts.navbar') -->
+    @include('parts.navbar')
+
     <div class="product">
         <h1>{{ $product->name }}</h1>
         <p>{{ $product->description }}</p>
         <p>Price: €{{ $product->price }}</p>
         <img src="{{ asset('img/product/' . $product->image) }}" alt="{{ $product->name }}">
+        <label for="date">Kies uw datum:</label>
+        <input id="datePickerId" type="date" name="date" min="">
+        <br>
 
+        <button> Boek NU </button>
     </div>
 </body>
 
