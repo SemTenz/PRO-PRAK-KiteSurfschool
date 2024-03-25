@@ -15,7 +15,8 @@
             </div>
             <div class="nav-bar__menu2">
                 <ul>
-                    @if (Auth::check())
+                    @if (Auth::user())
+                    @if (Auth::user()->usertype == 'admin')
                     <li><a href="{{ route('home') }}">Boek Nu</a></li>
                     <li><a href="{{ route('admin.index') }}">Admin menu</a></li>
                     <li><a href="{{ route('profile.edit') }}">Profiel</a></li>
@@ -29,6 +30,18 @@
                     </form>
                     @else
                     <li><a href="{{ route('home') }}">Boek Nu</a></li>
+
+                    <li><a href="{{ route('profile.edit') }}">Profiel</a></li>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <li :href="route('logout')" onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            <a href="{{ route('logout') }}">Uitloggen</a>
+                        </li>
+                    </form>
+                    @endif
+
+                    @else
                     <li><a href="{{ route('profile.edit') }}">Login</a></li>
                     <li><a href="{{ route('profile.destroy') }}">Register's</a></li>
                     @endif
