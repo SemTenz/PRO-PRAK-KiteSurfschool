@@ -9,7 +9,9 @@
             <th>usertype</th>
         </tr>
         @foreach ($users as $user)
+
         <tr>
+
             <td>{{ $user->id }}</td>
             <td>{{ $user->name }}</td>
             <td>{{ $user->email }}</td>
@@ -24,6 +26,11 @@
                 </form>
             </td>
         </tr>
+
         @endforeach
     </table>
+
+    @foreach ($banned as $banData)
+    {{$banData->bannable_id}}
+    @endforeach
 </x-admin-layout>

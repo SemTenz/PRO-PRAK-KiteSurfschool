@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 
+
 class UserController extends Controller
 {
     public function index()
@@ -17,6 +18,11 @@ class UserController extends Controller
     {
         $users = User::find($id);
         return view('admin.users.edit', compact('users'));
+    }
+    public function editRole($id)
+    {
+        $users = User::find($id);
+        return view('admin.users.editRole', compact('users'));
     }
 
     public function update(Request $request, $id)
