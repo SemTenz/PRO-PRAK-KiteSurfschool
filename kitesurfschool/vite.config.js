@@ -9,7 +9,8 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/scss/home.scss',
                 'resources/scss/login.scss',
-                'resources/scss/navbar.scss'
+                'resources/scss/navbar.scss',
+                'resources/scss/product.scss',
             ],
             refresh: true,
         }),
