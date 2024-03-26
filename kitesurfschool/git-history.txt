@@ -1,0 +1,99 @@
+* f2fc01f Opdrachten sprint1
+| *   7cc3bf2 solving merge issues
+| |\  
+| | * 57d3fd0 merge with feature-sem
+| | *   ec10a28 merge with feature-sem
+| | |\  
+| | | * b19a18c merge met dev
+| | * | 703cbfc admin dashboard fix
+| * | |   a176c03 merge conflicts
+| |\ \ \  
+| |/ / /  
+|/| | |   
+* | | | fbc35be Homepage + productpagina's en database
+| * | | a041008 livewire zoekfunctie toegevoegd
+| * | | 7b5e43b Merge branch 'dev' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-axel
+| |\| | 
+| | * |   3b286ec Merge branch 'dev' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-steff
+| | |\ \  
+| |_|/ /  
+|/| | |   
+* | | |   f65f26e Merge branch 'dev' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into dev
+|\ \ \ \  
+* | | | | b60fa75 arrow en golven toegevoegd bij de banner
+| | | * |   5ea9e4d Merge branch 'feature-axel' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-steff
+| | | |\ \  
+| | | * \ \   9875852 solving merge conflicts
+| | | |\ \ \  
+| | | | | |/  
+| | | | |/|   
+| | | * / | f832a7f Navbar update
+| | |/ / /  
+| |/| | |   
+| | * | | 2fe9044 Merge branch 'feature-sem' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-axel
+| | |\| | 
+| | | * |   e340b68 Merge branch 'dev' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-sem
+| | | |\ \  
+| | * | \ \   d95696e Merge branch 'feature-steff' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-axel
+| | |\ \ \ \  
+| | |/ / / /  
+| |/| | | |   
+| * | | | |   befd6bd Merge branch 'dev' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into dev
+| |\ \ \ \ \  
+| | |_|/ / /  
+| |/| | / /   
+| | | |/ /    
+| | |/| |     
+| | * | | 793c7d8 overzicht aanpassing
+| |/ / /  
+|/| | |   
+* | | | 4398160 overview ipv home
+* | | | 283a4ae navbar aangepast
+* | | |   f64ae09 Merge branch 'dev' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-steff
+|\ \ \ \  
+| * | | | 9d8f52d Navbar in een andere map + scss
+* | | | |   663e801 solving merge conflicts
+|\ \ \ \ \  
+* \ \ \ \ \   a9344b1 Merge branch 'feature-axel' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-steff
+|\ \ \ \ \ \  
+* \ \ \ \ \ \   f04763e Merge branch 'feature-axel' of https://github.com/SemTenz/PRO-PRAK-KiteSurfschool into feature-steff
+|\ \ \ \ \ \ \  
+| |_|_|/ / / /  
+|/| | | | | |   
+| | | | * | | ebf3b6e css styling aangepast voor de login
+| | | |/| | | 
+| |_|_|/ / /  
+|/| | | | |   
+* | | | | | f408782 Navbar compleet toegevoegd en een begin gemaakt aan de homepagina (logo en banner naar public)
+| | | * | | 9f57b3f styling toegevoegd aan de login pagina
+| |_|/ / /  
+|/| | | |   
+| | | * | 46a8442 veranderen gebruikersrol toegevoegd
+| | | |/  
+| | | * f8e6364  je kan nu de rol van een gebruiker aanpassen
+| | |/  
+| | * ec9038b de routes goed gemaakt voor het admin dashboard en alle data uit de database opgehaald
+| |/  
+| * 470e87b route opgezet voor admin daschboard
+| *   07250c3 application-logo svg  toegevoegd
+| |\  
+| |/  
+|/|   
+* |   1f60d48 login styling aan het aanpassen en sass geinstalleerd
+|\ \  
+| * | 44abf97 merge sass
+| * | 68bf347 sass opgelost
+| * | cadb146 scss toegevoegd
+* | | b45bb67 Login, registratie pagina's naar nederlands vertaald + Nog geen account text toegevoegd aan de login pagina
+|/ /  
+| * acb5b99 merge issues oplossen
+| *   10c0d79 solving merge issues
+| |\  
+| |/  
+|/|   
+* | c979c13 Ik heb een default admin user toegevoegd voor inloggen, ook een admin dashboard toegevoegd als je inlogd als admin
+| * 4e9fd26 puling dev branch
+| * a5224e2 switching branch
+|/  
+* 3f892bf Laravel project aangemaakt
+* 47cc46b Create README.md

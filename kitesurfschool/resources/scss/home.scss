@@ -165,3 +165,70 @@
         font-weight: bold;
     }
 }
+
+
+.faq {
+    position: relative;
+    top: 300px; /* Aangepaste positie voor betere uitlijning */
+    padding: 30px;
+    text-align: center; /* Tekst in het midden uitlijnen */
+    background-color: #f8f9fa; /* Zachte grijze achtergrondkleur */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+}
+
+.faq h2 {
+    font-size: 2.5em; /* Grotere lettergrootte voor de kop */
+    font-weight: bold;
+    margin-bottom: 30px; /* Grotere ruimte onder de kop */
+    color: #333; /* Donkere tekstkleur */
+}
+
+.question {
+    text-align: left; /* Vragen en antwoorden aan de linkerkant uitlijnen */
+    cursor: pointer; /* De muiskursor
+    margin-bottom: 20px; /* Kleinere ruimte tussen vragen */
+}
+
+.question h3 {
+    
+    font-size: 1.3em; /* Kleinere lettergrootte voor vraagtitels */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Donkere tekstkleur */
+    cursor: pointer; /* Wijs cursor toe om aan te geven dat het klikbaar is */
+}
+
+.question p {
+    font-size: 1.1em; /* Kleinere lettergrootte voor antwoorden */
+    color: #668; /* Iets donkerdere tekstkleur */
+    margin-left: 0; /* Geen extra marge aan de linkerkant */
+}
+
+.question .toggle-icon {
+    margin-right: 10px; /* Ruimte tussen icoon en tekst */
+}
+
+.faq button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #63CAF2; /* Dikkere rand voor de knop */
+    border-radius: 20px; /* Afgeronde hoeken voor de knop */
+    cursor: pointer;
+    background-color: transparent; /* Doorzichtige achtergrond */
+    color: #63CAF2; /* Kleur van de knoptekst */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Vloeiende overgang voor hover-effect */
+}
+
+.faq button:hover {
+    background-color: #63CAF2; /* Achtergrondkleur veranderen bij hover */
+    color: white; /* Tekstkleur veranderen naar wit bij hover */
+    border-color: #63CAF2; /* Randkleur veranderen bij hover */
+}
+
+.question .answer {
+    display: none; /* Verberg de antwoorden standaard */
+}
+
+.question.expanded .answer {
+    display: block; /* Toon de antwoorden wanneer de vraag wordt uitgeklapt */
+}
